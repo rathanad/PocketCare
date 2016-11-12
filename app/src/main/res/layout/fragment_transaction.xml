@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.TransactionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/background">
+
+        <Spinner
+            android:id="@+id/spinner_income_expense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="-30dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/downarrow" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Transaction Name"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_text_amount"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Transaction Amount" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:layout_weight="5"
+            android:background="@drawable/background"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="-30dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/downarrow" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_add_category"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/plusbutton" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_view_date"
+            android:gravity="center"
+            android:hint="Select Date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="Date"
+            android:background="@android:color/holo_blue_dark"
+            android:id="@+id/button_select_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/button_save"
+            android:layout_gravity="center"
+            android:text="Save"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_marginLeft="10dp"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="Clear"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PocketCare</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="error_message_empty_category">This field cannot be empty</string>
+    <string name="error_message_category_exists">This source category already exists</string>
+
+
+    <string-array name="type">
+        <item>Select type...</item>
+        <item>Income</item>
+        <item>Expense</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>Home</item>
+        <item>Food</item>
+        <item>Health/medical</item>
+        <item>Transportation</item>
+        <item>Pet</item>
+        <item>Personal</item>
+        <item>Utilities</item>
+        <item>Travel</item>
+        <item>Other</item>
+    </string-array>
+
+
+</resources>

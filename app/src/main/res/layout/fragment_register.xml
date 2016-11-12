@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+
+    tools:context=".ui.login.RegisterFragment">
+
+    <EditText
+        android:id="@+id/edit_text_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:hint="User Name"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:hint="Password" />
+
+    <EditText
+        android:id="@+id/edit_text_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Register"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_view_go_to_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/text_not_registered"
+            android:gravity="center"
+            android:text="go back to login screen"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>
